@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 550px;
+    padding: 3%;
+}
+
+.main-content section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+img {
+    width: 64px;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.header{
+    font-size: 36px;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    padding: 0px 0px 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sedans{
+    padding: 48px;
+    background-color: #E28525;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.suvs{
+    padding: 48px;
+    background-color: #016972;
+}
+
+.luxury{
+    padding: 48px;
+    background-color: #00403F;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.paragraph{
+    color: #ffffffbf;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Lexend Deca";
+}
+
+.button-orange{
+    display: block;
+    background-color: #F2F2F2;
+    color: #E28525;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-family: "Lexend Deca";
+    border: 2px solid;
+    border-color: hsl(0 0% 95%);
+    font-size: 16px;
+}
+
+.button-orange:hover{
+    background-color: #E28525;
+    cursor: pointer;
+    color: white;
+}
+
+.button-blue{
+    display: block;
+    background-color: #F2F2F2;
+    color: #016972;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-family: "Lexend Deca";
+    border: 2px solid;
+    border-color: hsl(0 0% 95%);
+    font-size: 16px;
+}
+
+.button-blue:hover{
+    background-color: #016972;
+    cursor: pointer;
+    color: white;
+}
+
+.button-green{
+    display: block;
+    background-color: #F2F2F2;
+    color: #00403F;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-family: "Lexend Deca";
+    border: 2px solid;
+    border-color: hsl(0 0% 95%);
+    font-size: 16px;
+}
+
+.button-green:hover{
+    background-color: #00403F;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 800px){
+
+    body{
+        height: auto;
+    }
+
+    .main-content{
+        flex-direction: column;
+        margin: 6%;
+        height: auto;
+    }
+
+    .main-content section {
+        display: block;
+    }
+
+    .sedans{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .paragraph {
+        margin-bottom: 40px;
+    }
+}
